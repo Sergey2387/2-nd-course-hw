@@ -1,0 +1,259 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Montserrat, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a, button, input {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  font-size: 16px;
+}
+
+.center {
+  padding-left: calc(50% - 600px);
+  padding-right: calc(50% - 600px);
+}
+
+.top {
+  background-color: #E1FF8F;
+  position: relative;
+  height: 800px;
+}
+
+.top-stars__5 {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.top-stars--3 {
+  position: absolute;
+  right: 455px;
+  top: 538px;
+}
+.top-stars__4 {
+  position: absolute;
+  right: 344px;
+  top: 568px;
+}
+.top-stars__2 {
+  position: absolute;
+  left: 156px;
+  top: 69px;
+}
+.top-stars__1 {
+  position: absolute;
+  left: 63px;
+  top: 94px;
+}
+
+.top-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  max-width: 769px;
+  padding-top: 196px;
+}
+
+.top-content {
+  display: flex;
+  gap: 1.5rem;
+  flex-direction: column;
+}
+.top-content__title h1 {
+  color: #202027;
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.top-content__text p {
+  color: #202027;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2rem;
+}
+
+.top-button {
+  cursor: pointer;
+  box-sizing: border-box;
+  width: 15.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 1.8rem;
+  background: #202027;
+  border: 1px solid #202027;
+  border-radius: 60px;
+  gap: 10px;
+  color: #FFF;
+  text-align: center;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 141.688%;
+}
+.top-button:hover {
+  background: #fff;
+  color: #000;
+}
+
+.about {
+  min-height: 1470px;
+  position: relative;
+  background-color: #202027;
+}
+
+.about-stars__1 {
+  position: absolute;
+  top: 48.12rem;
+  left: 1.56rem;
+}
+.about-stars__2 {
+  position: absolute;
+  top: 51.38rem;
+  left: 2.5rem;
+}
+.about-stars__3 {
+  position: absolute;
+  top: 4.81rem;
+  right: -8.91rem;
+}
+
+.about-wrapper {
+  position: relative;
+  z-index: 2;
+  padding-bottom: 3.125rem;
+}
+
+.about-desc {
+  max-width: 788px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5rem;
+  padding-top: 94px;
+  padding-bottom: 72px;
+}
+.about-desc__title {
+  color: #FFF;
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.about-desc__text {
+  max-width: 788px;
+  color: #FFF;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2rem; /* 133.333% */
+}
+
+.about-content {
+  gap: 2rem;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+.about-content__wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  grid-column: span 4;
+}
+.about-content__item {
+  background-color: #fff;
+  max-width: 378px;
+  height: 473px;
+  border-radius: 30px;
+}
+.about-content__item:hover {
+  transform: scale(1.1);
+  transition: 0.5s all;
+  cursor: pointer;
+}
+.about-content__item_big {
+  min-height: 551px;
+}
+.about-content__item_middle {
+  min-height: 512px;
+}
+.about-content__item img {
+  max-width: 100%;
+  border-radius: 30px;
+}
+.about-content__desc {
+  display: flex;
+  padding: 32px 32px 36px 32px;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+  gap: 16px;
+}
+.about-content__btn {
+  display: flex;
+  padding: 8px 16px 10px 16px;
+  align-items: center;
+  border-radius: 52.582px;
+  background: #F7F7F7;
+}
+.about-content__text {
+  color: #202027;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+/*# sourceMappingURL=style.css.map */
