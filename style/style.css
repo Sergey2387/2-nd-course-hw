@@ -242,11 +242,15 @@ html {
   gap: 16px;
 }
 .about-content__btn {
+  font-weight: 500;
+  line-height: 110%;
+  font-size: 1rem;
   display: flex;
   padding: 8px 16px 10px 16px;
   align-items: center;
   border-radius: 52.582px;
   background: #F7F7F7;
+  color: #202027;
 }
 .about-content__text {
   color: #202027;
