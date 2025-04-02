@@ -1,0 +1,131 @@
+.mini-games-title{
+  color: #FFF;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding-top: 46px;
+  padding-bottom: 72px;
+}
+.mini-games {
+  background-color: #202027;
+  position: relative;
+  
+  &__star-1 {
+    position: absolute;
+    top: 93px;
+    right: 124px;
+  }
+  
+  &__star-2 {
+    position: absolute;
+    top: 126px;
+    right: 45px;
+  }
+  
+  &__star-3 {
+    position: absolute;
+    bottom: 65px;
+    right: 52px;
+  }
+  
+  &__star-4 {
+    position: absolute;
+    bottom: 45px;
+    right: 150px;
+  }
+  
+  &__wrap {
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(12, 1fr);
+    flex-direction: column;
+    gap: 32px;
+    z-index: 1;
+    padding-bottom: 144px;
+    
+  }
+  
+  &__item {
+    grid-column: span 12;
+    display: flex;
+    flex-direction: row;
+    border-radius: 30px;
+    background: #FFF;
+    box-shadow: 0 20px 67px -12px rgba(0, 0, 0, 0.13);
+    height: 500px;
+  }
+  
+  &__item:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+  
+  &__content {
+    display: flex;
+    width: 600px;
+    height: 500px;
+    padding: 48px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 36px;
+  }
+  
+  &__desc {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+  }
+  
+  &__title {
+    color: #202027;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    max-width: 505px;
+  }
+  
+  &__text {
+    color: #202027;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    max-width: 457px;
+  }
+  
+  &__btn {
+    display: flex;
+    width: 247px;
+    padding: 16px 28px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 60px;
+    background: #202027;
+    color: #FFF;
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 141.688%;
+    cursor: pointer;
+  }
+  
+  &__btn:hover {
+    background: #fff;
+    color: #000;
+    border: 1px solid #000;
+  }
+  
+  &__img {
+    display: flex;
+  }
+  
+  &__img img {
+    border-radius: 30px;
+    max-width: 600px;
+    height: 500px;
+  }
+}

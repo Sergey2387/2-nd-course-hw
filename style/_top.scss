@@ -1,4 +1,5 @@
 .top {
+  overflow: hidden;
   background-color: #E1FF8F;
   position: relative;
   height: 800px;
@@ -10,6 +11,7 @@
     position: absolute;
     right: 0;
     top: 0;
+    overflow: hidden;
   }
 
   &--3 {
@@ -91,5 +93,40 @@
   &:hover {
     background: #fff;
     color: #000;
+  }
+}
+.top-line{
+  max-width: 3300px;
+  padding: 27px 49px;
+  position: absolute;
+  bottom: 0;
+  left: -30px;
+  height: 90px;
+  border: 1px solid rgba(255, 255, 255, 0.20);
+  background: #BCEC30;
+  backdrop-filter: blur(25px);
+  display: flex;
+  flex-direction: row ;
+  align-items: center;
+  gap: 51px;
+  animation: marquee 5s infinite;
+  &__text{
+    white-space: nowrap;
+    color: #202027;
+    font-size: 1.875rem;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    
+  }
+  &__star{
+  }
+}
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-54%);
   }
 }
