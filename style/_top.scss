@@ -14,16 +14,16 @@
     overflow: hidden;
   }
 
-  &--3 {
+  &__3 {
     position: absolute;
     right: 455px;
-    top: 538px;
+    bottom: 225px;
   }
 
   &__4 {
     position: absolute;
     right: 344px;
-    top: 568px;
+    bottom: 179px;
   }
 
   &__2 {
@@ -37,20 +37,23 @@
     left: 63px;
     top: 94px;
   }
+  &__mobile {
+    display: none;
+  }
 
 }
 
 .top-wrap {
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  gap: 48px;
   max-width: 769px;
   padding-top: 196px;
 }
 
 .top-content {
   display: flex;
-  gap: 1.5rem;
+  gap: 24px;
   flex-direction: column;
 
   &__title h1 {
@@ -96,7 +99,7 @@
   }
 }
 .top-line{
-  max-width: 3300px;
+  box-sizing: border-box;
   padding: 27px 49px;
   position: absolute;
   bottom: 0;
