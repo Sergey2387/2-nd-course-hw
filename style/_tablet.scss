@@ -7,24 +7,24 @@
     &__5 {
       display: none;
     }
-    
+
     &__mobile {
       position: absolute;
       display: block;
       top: 0;
       right: 0;
     }
-    
+
     &__3 {
       bottom: 200px;
       right: 150px;
-      
+
     }
-    
+
     &__4 {
       right: 50px;
       bottom: 100px;
-      
+
     }
   }
   .about-stars {
@@ -33,7 +33,7 @@
       height: 300px;
     }
   }
-  
+
   .mini-games {
     &__wrap {
       display: flex;
@@ -41,15 +41,15 @@
       align-items: center;
       max-width: 1024px;
     }
-    
+
     &__item {
       max-width: 786px;
     }
-    
+
     &__img img {
       max-width: 100%;
     }
-    
+
   }
 }
 

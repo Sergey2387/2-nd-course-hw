@@ -37,6 +37,7 @@
     left: 63px;
     top: 94px;
   }
+
   &__mobile {
     display: none;
   }
@@ -97,8 +98,12 @@
     background: #fff;
     color: #000;
   }
+  &__mobile {
+    display: none;
+  }
 }
-.top-line{
+
+.top-line {
   box-sizing: border-box;
   padding: 27px 49px;
   position: absolute;
@@ -109,22 +114,25 @@
   background: #BCEC30;
   backdrop-filter: blur(25px);
   display: flex;
-  flex-direction: row ;
+  flex-direction: row;
   align-items: center;
   gap: 51px;
   animation: marquee 5s infinite;
-  &__text{
+
+  &__text {
     white-space: nowrap;
     color: #202027;
     font-size: 1.875rem;
     font-weight: 700;
     letter-spacing: 1.2px;
     text-transform: uppercase;
-    
+
   }
-  &__star{
+
+  &__star {
   }
 }
+
 @keyframes marquee {
   0% {
     transform: translateX(0%);

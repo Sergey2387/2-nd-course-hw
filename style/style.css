@@ -11,6 +11,10 @@
   vertical-align: baseline;
 }
 
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
@@ -152,6 +156,9 @@ html {
   background: #fff;
   color: #000;
 }
+.top-button__mobile {
+  display: none;
+}
 
 .top-line {
   box-sizing: border-box;
@@ -231,7 +238,7 @@ html {
   line-height: normal;
 }
 .about-desc__text {
-  max-width: 788px;
+  max-width: 770px;
   color: #FFF;
   font-size: 1.5rem;
   font-style: normal;
@@ -255,10 +262,10 @@ html {
   max-width: 378px;
   height: 473px;
   border-radius: 30px;
+  transition: 0.5s all;
 }
 .about-content__item:hover {
   transform: scale(1.1);
-  transition: 0.5s all;
   cursor: pointer;
 }
 .about-content__item_big {
@@ -542,6 +549,20 @@ html {
   .top-content__text p {
     font-size: 1rem;
   }
+  .top-button {
+    cursor: auto;
+  }
+  .top-button:hover {
+    background: #202027;
+    color: #FFF;
+    transform: none;
+  }
+  .top-button__desktop {
+    display: none;
+  }
+  .top-button__mobile {
+    display: block;
+  }
   .about {
     display: none;
   }
@@ -579,6 +600,7 @@ html {
     gap: 32px;
   }
   .mini-games__btn {
+    cursor: auto;
     display: flex;
     width: 285px;
     padding: 16px 28px;
@@ -591,6 +613,11 @@ html {
     font-style: normal;
     font-weight: 600;
     line-height: 141.688%;
+  }
+  .mini-games__btn:hover {
+    background: #202027;
+    color: #FFF;
+    transform: none;
   }
   .mini-games__title {
     width: 100%;

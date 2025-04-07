@@ -2,23 +2,23 @@
   min-height: 1470px;
   position: relative;
   background-color: #202027;
-  
+
 }
 
 .about-stars {
-  
+
   &__1 {
     position: absolute;
     top: 48.12rem;
     left: 1.56rem;
   }
-  
+
   &__2 {
     position: absolute;
     top: 51.38rem;
     left: 2.5rem;
   }
-  
+
   &__3 {
     overflow: hidden;
     position: absolute;
@@ -41,7 +41,7 @@
   gap: 1.5rem;
   padding-top: 94px;
   padding-bottom: 72px;
-  
+
   &__title {
     color: #FFF;
     font-size: 4rem;
@@ -49,9 +49,9 @@
     font-weight: 700;
     line-height: normal;
   }
-  
+
   &__text {
-    max-width: 788px;
+    max-width: 770px;
     color: #FFF;
     font-size: 1.5rem;
     font-style: normal;
@@ -64,39 +64,40 @@
   gap: 2rem;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  
+
   &__wrap {
     display: flex;
     flex-direction: column;
     gap: 2rem;
     grid-column: span 4;
   }
-  
+
   &__item {
     background-color: #fff;
     max-width: 378px;
     height: 473px;
     border-radius: 30px;
+    transition: 0.5s all;
   }
+
   &__item:hover {
     transform: scale(1.10);
-    transition: 0.5s all;
     cursor: pointer;
   }
-  
+
   &__item_big {
     min-height: 551px;
   }
-  
+
   &__item_middle {
     min-height: 512px;
   }
-  
+
   &__item img {
     max-width: 100%;
     border-radius: 30px;
   }
-  
+
   &__desc {
     display: flex;
     padding: 32px 32px 36px 32px;
@@ -105,7 +106,7 @@
     align-self: stretch;
     gap: 16px;
   }
-  
+
   &__btn {
     font-weight: 500;
     line-height: 110%;
@@ -117,7 +118,7 @@
     background: #F7F7F7;
     color: #202027;
   }
-  
+
   &__text {
     color: #202027;
     font-size: 2rem;

@@ -29,7 +29,29 @@ let b = 2;
 alert(a % b);
 
 // Задание 7
-let name = prompt('Как твое имя ?');
+let num = 1;
+num += 5;
+num -= 3;
+num *= 7;
+num /= 3;
+num++;
+num--;
+alert(num);
+
+// Задание 8
+let age = Number(prompt('Сколько вам лет?'));
+alert(age);
+
+// Задание 9
+let user = {
+  name: String('Sergey'),
+  age: Number(32),
+  isAdmin: Boolean(true),
+};
+alert(user);
+
+// Задание 10
+let name = String(prompt('Как твое имя ?'));
 alert(`Привет, ${name}`);
 
 // Дополнительное задание
