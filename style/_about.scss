@@ -71,29 +71,30 @@
     gap: 2rem;
     grid-column: span 4;
   }
+}
 
-  &__item {
-    background-color: #fff;
-    max-width: 378px;
-    height: 473px;
-    border-radius: 30px;
-    transition: 0.5s all;
-  }
+.about-item {
+  background-color: #fff;
+  max-width: 378px;
+  height: 473px;
+  border-radius: 30px;
+  transition: 0.5s all;
 
-  &__item:hover {
+
+  &:hover {
     transform: scale(1.10);
     cursor: pointer;
   }
 
-  &__item_big {
+  &_big {
     min-height: 551px;
   }
 
-  &__item_middle {
+  &_middle {
     min-height: 512px;
   }
 
-  &__item img {
+  & img {
     max-width: 100%;
     border-radius: 30px;
   }
