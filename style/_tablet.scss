@@ -41,16 +41,17 @@
       align-items: center;
       max-width: 1024px;
     }
+  }
+  .mini-games-item {
+    max-width: 786px;
 
-    &__item {
-      max-width: 786px;
-    }
 
     &__img img {
       max-width: 100%;
     }
 
   }
+
 }
 
 @media (max-width: 850px) {
