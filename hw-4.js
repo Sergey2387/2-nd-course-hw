@@ -9,13 +9,13 @@ while (a <= 2) {
 let b = 1;
 while (b <= 5) {
   console.log(b);
-  b++
+  b++;
 }
 // Задание 3
 let c = 7;
 while (c <= 22) {
   console.log(c);
-  c++
+  c++;
 }
 
 // Задание 4
@@ -38,19 +38,18 @@ for (; n >= 50;) {
 console.log(num);
 
 // Задание 6
-let fridayFirst
-let friday = fridayFirst = 4;
-for (; friday <= 31;) {
+let fridayFirst = 4;
+for (let friday = fridayFirst; friday <= 31; friday += 7) {
   console.log(`Сегодня пятница, ${friday}-е число. Необходимо подготовить отчет.`);
-  friday += 7;
   friday++;
 }
 
 // Дополнительное задание 1
 let k = 100;
 let iterations = 0;
-for (; k >= 0; iterations++) {
-  k -= 7;
+for (; k >= 0; k -= 7 ) {
+  iterations++
+
 }
 console.log(`Количество итераций : ${iterations}`);
 console.log(`Число : ${k}`);
