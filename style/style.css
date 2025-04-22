@@ -460,6 +460,9 @@ html {
     right: 50px;
     bottom: 100px;
   }
+  .top-content__title h1 {
+    font-size: 3rem;
+  }
   .about-stars__3 {
     width: 300px;
     height: 300px;
@@ -479,7 +482,7 @@ html {
 }
 @media (max-width: 850px) {
   html {
-    font-size: 12px;
+    font-size: 16px;
   }
   .center {
     padding-left: 24px;
@@ -639,6 +642,9 @@ html {
   }
 }
 @media (max-width: 525px) {
+  html {
+    font-size: 16px;
+  }
   .mini-games__star-1, .mini-games__star-2, .mini-games__star-3, .mini-games__star-4 {
     display: none;
   }

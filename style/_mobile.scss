@@ -188,6 +188,9 @@
 }
 
 @media (max-width: 525px) {
+  html {
+    font-size: 16px;
+  }
   .mini-games {
     &__star-1,
     &__star-2,
