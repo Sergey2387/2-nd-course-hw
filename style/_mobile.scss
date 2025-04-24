@@ -1,4 +1,4 @@
-@media  (max-width: 767px ) {
+@media (max-width: 767px) {
 
   .center {
     padding-right: 16px;
@@ -79,15 +79,18 @@
   }
   .top-button {
     cursor: auto;
+
     &:hover {
       background: #202027;
       color: #FFF;
       transform: none;
     }
-    &__desktop {
+
+    &_desktop {
       display: none;
     }
-    &__mobile {
+
+    &_mobile {
       display: block;
     }
   }
@@ -96,20 +99,26 @@
     display: none;
   }
   .mini-games {
+    &__star-3,
+    &__star-4 {
+      display: none;
+    }
+
     &__wrap {
       display: flex;
       flex-direction: column;
       align-items: center;
+      padding-bottom: 48px;
       //grid-template-columns: repeat(4, 1fr);
     }
+  }
+  .mini-games-item {
+    width: 343px;
+    height: auto;
+    //grid-column: span 4;
+    flex-direction: column-reverse;
+    align-items: center;
 
-    &__item {
-      width: 343px;
-      height: auto;
-      //grid-column: span 4;
-      flex-direction: column-reverse;
-      align-items: center;
-    }
 
     &__desc {
       width: 285px;
@@ -126,7 +135,7 @@
       max-width: 100%;
     }
 
-    &__item:nth-child(even) {
+    &:nth-child(even) {
       flex-direction: column-reverse;
     }
 
@@ -154,6 +163,7 @@
       font-weight: 600;
       line-height: 141.688%;
     }
+
     &__btn:hover {
       background: #202027;
       color: #FFF;
@@ -173,5 +183,27 @@
       line-height: normal;
       text-align: start;
     }
+  }
+
+}
+
+@media (max-width: 525px) {
+  html {
+    font-size: 16px;
+  }
+  .mini-games {
+    &__star-1,
+    &__star-2,
+    &__star-3,
+    &__star-4 {
+      display: none;
+    }
+
+    &__wrap {
+      padding-bottom: 49px;
+    }
+  }
+  .footer {
+    min-height: 100px;
   }
 }

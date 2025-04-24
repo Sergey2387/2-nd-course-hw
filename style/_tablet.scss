@@ -27,6 +27,9 @@
 
     }
   }
+  .top-content__title h1 {
+    font-size: 3rem;
+  }
   .about-stars {
     &__3 {
       width: 300px;
@@ -41,21 +44,22 @@
       align-items: center;
       max-width: 1024px;
     }
+  }
+  .mini-games-item {
+    max-width: 786px;
 
-    &__item {
-      max-width: 786px;
-    }
 
     &__img img {
       max-width: 100%;
     }
 
   }
+
 }
 
 @media (max-width: 850px) {
   html {
-    font-size: 12px;
+    font-size: 16px;
   }
   .center {
     padding-left: 24px;
