@@ -169,7 +169,8 @@ html {
   height: 90px;
   border: 1px solid rgba(255, 255, 255, 0.2);
   background: #BCEC30;
-  backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(25px);
+          backdrop-filter: blur(25px);
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -654,6 +655,4 @@ html {
   .footer {
     min-height: 100px;
   }
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
