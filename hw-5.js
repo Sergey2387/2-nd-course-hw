@@ -1,33 +1,4 @@
-const startGame = () => {
-  const randomNumGenerate = Math.floor(Math.random() * 100) + 1;
-  let attempts = 0;
-  const randomNum = randomNumGenerate;
-  while (true) {
-    const userNumInput = prompt('Угадайте число от 1 до 100');
-    if (userNumInput === null) {
-      alert('Игра отменена');
-      break;
-    }
-    const userNum = Number(userNumInput);
 
-    if (!userNum || Number.isNaN(userNum)) {
-      alert('Введите число');
-      continue;
-    }
-    // Счетчик попыток
-    attempts++;
-
-    if (userNum < randomNum) {
-      alert('Больше');
-    } else if (userNum > randomNum) {
-      alert('Меньше');
-    } else {
-      alert(`Поздравляем! Вы угадали число ${randomNum} за ${attempts} попыток`);
-      break;
-    }
-  }
-};
-document.getElementById('start-game-1').addEventListener('click', startGame);
 
 // Задание 1
 // Напишите функцию, которая возвращает меньшее из двух чисел.

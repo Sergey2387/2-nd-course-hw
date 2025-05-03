@@ -3,4 +3,7 @@
   <component name="ExtraIDETweaksSettingsProject">
     <option name="enableOpenEditorsShowRecentFiles" value="false" />
   </component>
+  <component name="ProjectType">
+    <option name="id" value="jpab" />
+  </component>
 </project>
