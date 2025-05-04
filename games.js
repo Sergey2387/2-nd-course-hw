@@ -24,13 +24,14 @@ const startGame = () => {
     } else if (userNum > randomNum) {
       alert('Меньше');
     } else {
-      alert(`Поздравляем! Вы угадали число ${randomNum} за ${attempts} попыток`);
+      alert(
+        `Поздравляем! Вы угадали число ${randomNum} за ${attempts} попыток`
+      );
       break;
     }
   }
 };
 document.getElementById('start-game-1').addEventListener('click', startGame);
-
 
 // Игра №2 Простая арифметика
 
@@ -82,9 +83,8 @@ const mathProblem = () => {
   }
   return {
     problem: `${num1} ${mathOperator} ${num2}`,
-    answer
+    answer,
   };
-
 };
 const mathQuiz = () => {
   const { problem, answer } = mathProblem();
@@ -105,9 +105,7 @@ const mathQuiz = () => {
       break;
     }
     alert('Ответ неверен.');
-
   }
-
 };
 document.getElementById('start-game-2').addEventListener('click', mathQuiz);
 
@@ -120,8 +118,11 @@ document.getElementById('start-game-2').addEventListener('click', mathQuiz);
 // Сайт выводит перевернутый текст.
 
 const reverseText = () => {
-  let userText = String(prompt('Введите текст'));
-
+  const userText = prompt('Введите текст');
+  if (userText === null) {
+    alert('Вы отменили ввод.');
+    return;
+  }
   if (userText === '') {
     alert('Вы не ввели текст');
     return reverseText();
@@ -130,9 +131,9 @@ const reverseText = () => {
     alert('Введите текст без цифр');
     return reverseText();
   }
-  let reversedText = userText.toUpperCase().split('').reverse().join('');
+  const reversedText = userText.split('').reverse().join('');
 
-  alert(`Перевернутый текст: ${reversedText}`);
+  return alert(`Перевернутый текст: ${reversedText}`);
 };
 
 document.getElementById('start-game-3').addEventListener('click', reverseText);
@@ -192,22 +193,69 @@ const quiz = [
     question: 'Сколько у человека пальцев на одной руке?',
     options: ['1. Четыре', '2. Пять', '3. Шесть'],
     correctAnswer: 2,
-  }
+  },
 ];
 const gameQuiz = () => {
   let correctAnswers = 0;
   for (const { question, options, correctAnswer } of quiz) {
-    let userAnswer = Number(prompt(question + '\n' + options.join('\n')));
+    const userAnswer = prompt(question + '\n' + options.join('\n'));
     if (userAnswer === null) {
-      return alert('Вы отменили игру');
+      alert('Вы отменили игру');
+      return;
     }
-    if (userAnswer === correctAnswer) {
+    const userAnswerNumber = Number(userAnswer);
+    if (isNaN(userAnswerNumber)) {
+      alert('Пожалуйста, введите число!');
+      return gameQuiz();
+    }
+    if (userAnswerNumber === correctAnswer) {
       correctAnswers++;
       alert('Правильно');
     } else {
       alert('Неправильно');
     }
   }
-  return alert(`Правильных ответов: ${correctAnswers}`);
+  alert(`Правильных ответов: ${correctAnswers}`);
 };
 document.getElementById('start-game-5').addEventListener('click', gameQuiz);
+
+// Игра №4 «Камень, ножницы, бумага»
+const winnerCheck = (user, computer) => {
+  if (computer === user) {
+    return 'Ничья';
+  }
+  if (
+    (computer === 'камень' && user === 'бумага') ||
+    (computer === 'ножницы' && user === 'камень') ||
+    (computer === 'бумага' && user === 'ножницы')
+  ) {
+    return 'Вы победили';
+  } else {
+    return 'Вы проиграли';
+  }
+};
+
+const gameStart = () => {
+  const userAnswers = prompt(
+    `Давай сыграем в игру \n Выбирай значение: Камень, Ножницы, Бумага`
+  ).toLowerCase();
+
+  if (userAnswers === null) {
+    alert('Вы отменили игру');
+    return;
+  }
+
+  const values = ['камень', 'ножницы', 'бумага'];
+  const randomCompChose =
+    values[Math.floor(Math.random() * values.length)].toLowerCase();
+  const result = winnerCheck(userAnswers, randomCompChose);
+
+  if (!values.includes(userAnswers)) {
+    alert('Вы ввели неверное значение');
+    return gameStart();
+  }
+  alert(
+    `Вы выбрали: ${userAnswers} \nКомпьютер выбрал: ${randomCompChose} \nРезультат: ${result}`
+  );
+};
+document.getElementById('start-game-4').addEventListener('click', gameStart);
