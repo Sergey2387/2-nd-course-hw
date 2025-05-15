@@ -13,6 +13,10 @@
 const descP = document.querySelector('.description');
 const btnDel = document.querySelector('.delete-p');
 
-btnDel.addEventListener('click', () => {
-  descP.remove();
-})
+if (descP && btnDel) {
+  btnDel.addEventListener('click', () => {
+    descP.remove();
+  });
+} else {
+  console.log('элементы не найдены');
+}

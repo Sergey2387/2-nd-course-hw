@@ -30,9 +30,8 @@ const text = document.querySelector('#text1');
 const btnColor = document.querySelector('#btn-color-text');
 
 btnColor.addEventListener('click', () => {
-  text.classList.toggle('text1-color');
-  console.log(text);
-});
+  text.style.color = 'blue' })
+  ;
 
 // Задание 3
 // Задача: создайте кнопку, которая меняет текст в заголовке 
@@ -79,9 +78,11 @@ const descFindAll = document.querySelectorAll('.description');
 // Как должно работать: нажатие на кнопку «Добавить элемент» добавляет в конец страницы новый абзац с текстом «Новый абзац».
 
 const btnNewP = document.querySelector('.new-p');
-const newP = document.createElement('p');
-newP.textContent = 'Новый абзац';
+
+
 
   btnNewP.addEventListener('click', () => {
+    const newP = document.createElement('p');
+    newP.textContent = 'Новый абзац';
     document.body.appendChild(newP)
   })
