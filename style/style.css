@@ -161,11 +161,12 @@ html {
 }
 
 .top-line {
+  width: 100%;
   box-sizing: border-box;
   padding: 27px 49px;
   position: absolute;
   bottom: 0;
-  left: -30px;
+  left: -1px;
   height: 90px;
   border: 1px solid rgba(255, 255, 255, 0.2);
   background: #BCEC30;
@@ -174,8 +175,13 @@ html {
   display: flex;
   flex-direction: row;
   align-items: center;
+}
+.top-line__wrap {
+  animation: marquee 7s linear infinite;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   gap: 51px;
-  animation: marquee 5s infinite;
 }
 .top-line__text {
   white-space: nowrap;
@@ -185,12 +191,13 @@ html {
   letter-spacing: 1.2px;
   text-transform: uppercase;
 }
+
 @keyframes marquee {
   0% {
     transform: translateX(0%);
   }
   100% {
-    transform: translateX(-54%);
+    transform: translateX(-60%);
   }
 }
 .about {
