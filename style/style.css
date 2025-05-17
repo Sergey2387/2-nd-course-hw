@@ -386,7 +386,7 @@ html {
 }
 .mini-games-item__title {
   color: #202027;
-  font-size: 3rem;
+  font-size: 2rem;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -636,9 +636,9 @@ html {
     color: #FFF;
     transform: none;
   }
-  .mini-games-item__title {
+  .mini-games-item__title h2 {
     width: 100%;
-    font-size: 2rem;
+    font-size: 32px;
     text-align: start;
   }
   .mini-games-item__text {
