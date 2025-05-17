@@ -105,7 +105,6 @@
 }
 
 .top-line {
-  width: 100%;
   box-sizing: border-box;
   padding: 27px 49px;
   position: absolute;
@@ -120,7 +119,7 @@
   align-items: center;
 
   &__wrap {
-    animation: marquee 7s linear infinite;
+    animation: marquee 15s linear infinite;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -142,6 +141,6 @@
     transform: translateX(0%);
   }
   100% {
-    transform: translateX(-60%);
+    transform: translateX(-50%);
   }
 }
