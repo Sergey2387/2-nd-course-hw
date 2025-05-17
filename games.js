@@ -258,3 +258,20 @@ const gameStart = () => {
   );
 };
 document.getElementById('start-game-4').addEventListener('click', gameStart);
+
+//Игра №6
+//Генератор случайных цветов
+// Описание: При каждом клике на кнопку фон страницы меняется на случайный цвет.
+// Требования: Создайте кнопку, которая при нажатии меняет цвет фона (или другого элемента) на случайный.
+const getRandomColor = () => {
+  const r = Math.floor(Math.random() * 256);
+  const g = Math.floor(Math.random() * 256);
+  const b = Math.floor(Math.random() * 256);
+  return `rgb(${r}, ${g}, ${b})`;
+};
+document.getElementById('start-game-6').addEventListener('click', () => {
+  const bgColor = document.querySelectorAll('.center');
+  bgColor.forEach(color => {
+    color.style.backgroundColor = getRandomColor();
+  });
+});
