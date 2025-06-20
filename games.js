@@ -25,7 +25,7 @@ const startGame = () => {
       alert('Меньше');
     } else {
       alert(
-        `Поздравляем! Вы угадали число ${randomNum} за ${attempts} попыток`
+        `Поздравляем! Вы угадали число ${randomNum} за ${attempts} попыток`,
       );
       break;
     }
@@ -235,7 +235,7 @@ const winnerCheck = (user, computer) => {
 
 const gameStart = () => {
   const userAnswers = prompt(
-    `Давай сыграем в игру \n Выбирай значение: Камень, Ножницы, Бумага`
+    `Давай сыграем в игру \n Выбирай значение: Камень, Ножницы, Бумага`,
   ).toLowerCase();
 
   if (userAnswers === null) {
@@ -254,7 +254,7 @@ const gameStart = () => {
   }
 
   alert(
-    `Вы выбрали: ${userAnswers} \nКомпьютер выбрал: ${randomCompChose} \nРезультат: ${result}`
+    `Вы выбрали: ${userAnswers} \nКомпьютер выбрал: ${randomCompChose} \nРезультат: ${result}`,
   );
 };
 document.getElementById('start-game-4').addEventListener('click', gameStart);
